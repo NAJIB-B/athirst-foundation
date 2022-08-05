@@ -1,0 +1,24 @@
+.recentEventDiv {
+  text-align: center;
+  margin-top: 4rem;
+}
+.recentEventDiv h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.recentEventDiv p {
+  width: 70%;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  letter-spacing: 1px;
+  margin: 2.5rem auto;
+}
+
+.recentEventDivGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+.recentEventDivGridImg {
+  width: 38rem;
+  height: 30rem;
+}

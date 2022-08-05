@@ -1,0 +1,89 @@
+.mainDiv {
+  background-image: url(../../assets/helpOne.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vmin;
+}
+.mainTextDiv {
+  padding-top: 10rem;
+  color: white;
+}
+.mainTextDiv h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.mainTextDiv p {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+}
+.mainButttonDiv {
+  margin-top: 5rem;
+}
+
+.mainButtons:link {
+  text-decoration: none;
+  color: black;
+  background-color: #d9eff7;
+  padding: 1.2rem;
+  margin: 0 3rem;
+  font-weight: 700;
+  font-size: 1.5vw;
+  border-radius: 1rem;
+}
+
+/* visited link */
+.mainButtons:visited {
+  text-decoration: none;
+  color: black;
+  background-color: #d9eff7;
+  margin: 0 3rem;
+  padding: 1.2rem;
+  margin: 0 3rem;
+  font-weight: 700;
+  font-size: 1.5vw;
+  border-radius: 1rem;
+}
+
+/* mouse over link */
+.mainButtons:hover {
+  color: black;
+}
+
+/* selected link */
+.mainButtons:active {
+  color: black;
+}
+.outlineBtn:link {
+  text-decoration: none;
+  background-color: none;
+  border: 1px solid #d9eff7;
+  color: white;
+  padding: 1.2rem;
+  margin: 0 3rem;
+  font-weight: 700;
+  font-size: 1.5vw;
+  border-radius: 1rem;
+}
+.outlineBtn:visited {
+  text-decoration: none;
+  background-color: none;
+  border: 1px solid #d9eff7;
+  color: white;
+  margin: 0 3rem;
+  font-weight: 600;
+  font-size: 1.5vw;
+  border-radius: 1rem;
+}
+
+/* mouse over link */
+.outlineBtn:hover {
+  color: black;
+  background-color: #d9eff7;
+}
+
+/* selected link */
+.outlineBtn:active {
+  color: black;
+  background-color: #d9eff7;
+}
