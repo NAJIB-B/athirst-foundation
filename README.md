@@ -3,6 +3,7 @@
 ## HELPING THE HELPLESS BY ATHIRST FOUNDATION
 
 ```js
+//upload image function
 const uploadImage=(img)=>{
 //e.target.files[0];
  const formData = FormData();
@@ -15,8 +16,30 @@ const uploadImage=(img)=>{
 ```
 
 ```js
+// get image to show :)
 const getImage=()=>{
  axios.post("https://athirst-backend.herokuapp.com/get-img").then(res=>{
+   alert(res.data.message);
+ }).catch(err=>{alert(err.message)});
+};
+
+```
+
+```js
+// send message to athrist foundation function
+const postMail=(name,email,message)=>{
+const data = {name,email,message};
+ axios.post("https://athirst-backend.herokuapp.com/post-mail",data).then(res=>{
+   alert(res.data.message);
+ }).catch(err=>{alert(err.message)});
+};
+
+```
+
+```js
+// get message for athrist foundation 
+const postMail=()=>{
+ axios.post("https://athirst-backend.herokuapp.com/get-mail").then(res=>{
    alert(res.data.message);
  }).catch(err=>{alert(err.message)});
 };
