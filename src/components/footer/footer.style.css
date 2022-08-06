@@ -1,0 +1,23 @@
+.footerDiv {
+  height: 15rem;
+  margin-top: 4rem;
+  background-color: #d9eff7;
+}
+.footerDiv h2 {
+  padding-top: 4rem;
+}
+.footerDiv h5 {
+  padding-top: 2rem;
+}
+.footerLogo:link {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footerLogo:visited {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-decoration: none;
+}

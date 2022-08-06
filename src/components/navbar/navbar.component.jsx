@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -21,14 +22,12 @@ const NavBar = () => {
   });
   return (
     <>
-      <Navbar
-        expand="md"
-        fixed="top"
-        className={navbar ? "active" : "navbar"}
-      >
+      <Navbar expand="md" fixed="top" className={navbar ? "active" : "navbar"}>
         <Container>
-          <Navbar.Brand href="#"  className={navbar ? "activeLogo" : "logo"}>
-            ATHIRST FOUNDATION.ORG
+          <Navbar.Brand>
+            <Link smooth to="/#home" className={navbar ? "activeLogo" : "logo"}>
+              ATHIRST FOUNDATION.ORG
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -37,29 +36,41 @@ const NavBar = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link
-                href="#action1"
-                className={navbar ? "activeNavLink" : "navLink"}
-              >
-                Home
+              <Nav.Link>
+                <Link
+                  smooth
+                  to="/#home"
+                  className={navbar ? " activeNavLink" : "navLink"}
+                >
+                  Home
+                </Link>
               </Nav.Link>
-              <Nav.Link
-                href="#action2"
-                className={navbar ? " activeNavLink" : "navLink"}
-              >
-                About Us
+              <Nav.Link>
+                <Link
+                  smooth
+                  to="/#aboutUs"
+                  className={navbar ? " activeNavLink" : "navLink"}
+                >
+                  About Us
+                </Link>
               </Nav.Link>
-              <Nav.Link
-                href="#action1"
-                className={navbar ? " activeNavLink" : "navLink"}
-              >
-                Photo Gallery
+              <Nav.Link>
+                <Link
+                  smooth
+                  to="/#gallery"
+                  className={navbar ? " activeNavLink" : "navLink"}
+                >
+                  Photo Gallery
+                </Link>
               </Nav.Link>
-              <Nav.Link
-                href="#action2"
-                className={navbar ? " activeNavLink" : "navLink"}
-              >
-                Contact
+              <Nav.Link>
+                <Link
+                  smooth
+                  to="/#contact"
+                  className={navbar ? " activeNavLink" : "navLink"}
+                >
+                  Contact
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

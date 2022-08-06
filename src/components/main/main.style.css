@@ -2,7 +2,7 @@
   background-image: url(../../assets/helpOne.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vmin;
+  height: 90vmin;
 }
 .mainTextDiv {
   padding-top: 10rem;
@@ -62,7 +62,7 @@
   padding: 1.2rem;
   margin: 0 3rem;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   border-radius: 1rem;
 }
 .outlineBtn:visited {
@@ -72,7 +72,7 @@
   color: white;
   margin: 0 3rem;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   border-radius: 1rem;
 }
 

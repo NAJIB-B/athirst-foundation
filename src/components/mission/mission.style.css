@@ -15,7 +15,9 @@
 .missionGridCard p {
   font-size: 2rem;
   width: 70%;
+  margin: auto;
 }
+
 .missionGridCardText {
   line-height: 2.7rem;
   letter-spacing: 1px;

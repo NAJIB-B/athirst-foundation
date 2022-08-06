@@ -7,11 +7,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Slider = () => {
   return (
-    <>
-      <h3 className="photoGalleryText">PHOTO GALLERY</h3>
+    <div id="gallery">
+      <AnimationOnScroll animateIn="animate__tada">
+        <h3 className="photoGalleryText">PHOTO GALLERY</h3>
+      </AnimationOnScroll>
+
       <Swiper
         pagination={{
           type: "progressbar",
@@ -30,7 +35,7 @@ const Slider = () => {
           <img src={programsImg} alt="" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

@@ -1,32 +1,40 @@
 .logo:link {
   color: white;
-  font-size: 2.3vw;
+  font-size: 1.7rem;
   font-weight: 400;
+
+  text-decoration: none;
 }
+
 .logo:visited {
   color: white;
-  font-size: 2.3vw;
+  font-size: 1.7rem;
   font-weight: 400;
+  text-decoration: none;
 }
 .activeLogo:link {
   color: black;
-  font-size: 2.3vw;
+  font-size: 1.7rem;
   font-weight: 400;
+  text-decoration: none;
 }
 .activeLogo:visited {
   color: black;
-  font-size: 2.3vw;
+  font-size: 1.7rem;
   font-weight: 400;
+  text-decoration: none;
 }
 .navLink:link {
   color: white;
-  font-size: 1.7vw;
+  font-size: 1.2rem;
   margin: 0 0.8rem;
+  text-decoration: none;
 }
 .navLink:visited {
   color: white;
-  font-size: 1.7vw;
+  font-size: 1.2rem;
   margin: 0 0.8rem;
+  text-decoration: none;
 }
 .active {
   background-color: #d9eff7;
@@ -35,11 +43,13 @@
 
 .activeNavLink:link {
   color: black;
-  font-size: 1.7vw;
+  font-size: 1.2rem;
   margin: 0 0.8rem;
+  text-decoration: none;
 }
 .activeNavLink:visited {
   color: black;
-  font-size: 1.7vw;
+  font-size: 1.2rem;
   margin: 0 0.8rem;
+  text-decoration: none;
 }

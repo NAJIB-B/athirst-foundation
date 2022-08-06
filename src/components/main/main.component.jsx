@@ -3,7 +3,7 @@ import NavBar from "../navbar/navbar.component";
 
 const Main = () => {
   return (
-    <div className="mainDiv">
+    <div className="mainDiv" id="home">
       <NavBar></NavBar>
       <div className="mainTextDiv">
         <h1>HELPING THE HELPLESS</h1>

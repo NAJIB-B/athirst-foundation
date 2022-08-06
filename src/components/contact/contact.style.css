@@ -1,0 +1,26 @@
+.contactDiv {
+  text-align: left;
+  margin-top: 3rem;
+}
+.contactDiv p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.contactIcons {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 1rem;
+  color: #4ac1ec;
+}
+.contactRow {
+  padding-top: 3rem;
+}
+.contactSubmitBtn {
+  background-color: #d9eff7;
+  border: 1px solid #d9eff7;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 10rem;
+}
