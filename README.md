@@ -5,7 +5,7 @@
 ```js
 //upload image function
 const uploadImage=(img)=>{
-//e.target.files[0];
+//img = e.target.files[0];
  const formData = FormData();
  const img = formData.append("img",img);
  axios.post("https://athirst-backend.herokuapp.com/post-img",formData).then(res=>{
