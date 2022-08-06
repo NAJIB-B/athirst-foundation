@@ -6,15 +6,15 @@ const AboutUs = () => {
   return (
     <div className="aboutUsDiv" id="aboutUs">
       <h2> ABOUT US</h2>
-      <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-        <p>
-          The Athirst foundation is a Christian organization started by a lover
-          and follower of Jesus Christ. Helping helpless children and adults in
-          our rural community in Nigeria, Africa and the world at large by
-          providing food, education, shelter/accommodation, health care,
-          technology, talent, discovery and helping a talent grow.
-        </p>
-      </AnimationOnScroll>
+
+      <p>
+        The Athirst foundation is a Christian organization started by a lover
+        and follower of Jesus Christ. Helping helpless children and adults in
+        our rural community in Nigeria, Africa and the world at large by
+        providing food, education, shelter/accommodation, health care,
+        technology, talent, discovery and helping a talent grow.
+      </p>
+
       <AnimationOnScroll animateIn="animate__tada">
         <h5>
           The Athirst foundation is a proud sponsor of football club Beecroft

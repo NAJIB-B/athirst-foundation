@@ -1,7 +1,7 @@
 import "./map.style.css";
 import GoogleMapReact from "google-map-react";
 import LocationPin from "../LocationPin/LocationPin.component";
-import API_KEY from "../../CONFIG.JS";
+// import API_KEY from "../../CONFIG.JS";
 
 const Map = ({ location, zoomLevel }) => (
   <div className="map">

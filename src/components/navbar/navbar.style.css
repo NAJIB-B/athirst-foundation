@@ -5,7 +5,22 @@
 
   text-decoration: none;
 }
-
+.togglerBorder {
+  border: none;
+  outline: none !important;
+}
+.togglerIcon {
+  color: #d9eff7;
+  border: none;
+  border-radius: none;
+  outline: none;
+}
+.activeTogglerIcon {
+  color: black;
+  border: none;
+  border-radius: none;
+  outline: none;
+}
 .logo:visited {
   color: white;
   font-size: 1.7rem;
@@ -52,4 +67,237 @@
   font-size: 1.2rem;
   margin: 0 0.8rem;
   text-decoration: none;
+}
+.logoMargin {
+  margin-left: 8rem;
+}
+.navMargin {
+  margin-right: 6rem;
+}
+@media screen and (max-width: 1300px) {
+  .logoMargin {
+    margin-left: 6rem;
+  }
+  .navMargin {
+    margin-right: 4rem;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .logoMargin {
+    margin-left: 4rem;
+  }
+  .navMargin {
+    margin-right: 2rem;
+  }
+  .logo:link {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    text-decoration: none;
+  }
+
+  .logo:visited {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:link {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:visited {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeNavLink:link {
+    color: black;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+  }
+  .activeNavLink:visited {
+    color: black;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+  }
+  .navLink:link {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+  }
+  .navLink:visited {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .logoMargin {
+    margin-left: 3rem;
+  }
+  .navMargin {
+    margin-right: 1rem;
+  }
+  .logoImg {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+  }
+  .logo:link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    text-decoration: none;
+  }
+
+  .logo:visited {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:link {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:visited {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeNavLink:link {
+    color: black;
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    text-decoration: none;
+  }
+  .activeNavLink:visited {
+    color: black;
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    text-decoration: none;
+  }
+  .navLink:link {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    text-decoration: none;
+  }
+  .navLink:visited {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .logo:link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+
+    text-decoration: none;
+  }
+  .logoImg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+  }
+  .logo:visited {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:visited {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .logoMargin {
+    margin-left: 1.5rem;
+  }
+  .logo:link {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    text-decoration: none;
+  }
+  .logo:visited {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .logoImg {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.2rem;
+  }
+  .activeLogo:link {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:visited {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .logoMargin {
+    margin-left: 1rem;
+  }
+  .logo:link {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 400;
+
+    text-decoration: none;
+  }
+  .logo:visited {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:link {
+    color: black;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .activeLogo:visited {
+    color: black;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
 }

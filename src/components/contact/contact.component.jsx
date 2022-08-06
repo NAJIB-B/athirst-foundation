@@ -11,16 +11,15 @@ import {
   faLocationDot,
   faPhone,
   faEnvelope,
+  faBarsStaggered
 } from "@fortawesome/free-solid-svg-icons";
 
-import Map from "../map/map.component";
-
-const location = {
-  address: "No. 12 Oyebola St., Ojota, Lagos, Nigeria, Africa.",
-  lat: 6.58700061126983,
-  lng: 3.379746854549108,
-};
-const zoomLevel = 10;
+// const location = {
+//   address: "No. 12 Oyebola St., Ojota, Lagos, Nigeria, Africa.",
+//   lat: 6.58700061126983,
+//   lng: 3.379746854549108,
+// };
+// const zoomLevel = 10;
 const Contact = () => {
   return (
     <div className="contactDiv" id="contact">
@@ -34,7 +33,7 @@ const Contact = () => {
                   icon={faLocationDot}
                   className="contactIcons"
                 />{" "}
-                No. 12 Oyebola St., Ojota, Lagos, Nigeria, Africa
+                Suit 15 works plaza opposite Kujore bus stop Ojota Ogudu road
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhone} className="contactIcons" />{" "}
@@ -62,9 +61,6 @@ const Contact = () => {
               </p>
             </div>
           </Col>
-          <Col md={6}></Col>
-        </Row>
-        <Row mt-4>
           <Col md={6}>
             <div className="contactRow">
               <h2>Contact Us</h2>
@@ -92,7 +88,6 @@ const Contact = () => {
               </Form>
             </div>
           </Col>
-          <Col md={6}></Col>
         </Row>
       </Container>
     </div>

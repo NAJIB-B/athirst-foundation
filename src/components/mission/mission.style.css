@@ -27,3 +27,85 @@
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (min-width: 1919px) {
+  .missionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+  .missionGridCardImg {
+    width: 48rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .missionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+  }
+  .missionGridCardImg {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 570px) {
+  .missionGridCard h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .missionGridCard p {
+    font-size: 1.5rem;
+    width: 75%;
+    margin: auto;
+  }
+
+  .missionGridCardText {
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 440px) {
+  .missionGridCard h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .missionGridCard p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .missionGridCardText {
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .missionGridCard h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .missionGridCard p {
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .missionGridCardText {
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

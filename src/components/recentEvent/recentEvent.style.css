@@ -22,3 +22,13 @@
   width: 38rem;
   height: 30rem;
 }
+@media screen and (max-width: 640px) {
+  .recentEventDivGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+  }
+  .recentEventDivGridImg {
+    width: 85vw;
+    height: auto;
+  }
+}
