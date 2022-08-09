@@ -1,6 +1,6 @@
 import "./main.style.css";
 import NavBar from "../navbar/navbar.component";
-
+import { HashLink as Link } from "react-router-hash-link";
 const Main = () => {
   return (
     <div className="mainDiv" id="home">
@@ -14,12 +14,13 @@ const Main = () => {
         </p>
       </div>
       <div className="mainButttonDiv">
-        <a href="" className="mainButtons">
+        <Link smooth to="/#contact" className="mainButtons">
           GET IN TOUCH
-        </a>
-        <a href="" className=" outlineBtn">
+        </Link>
+
+        <Link smooth to="/#aboutUs" className=" outlineBtn">
           LEARN MORE
-        </a>
+        </Link>
       </div>
     </div>
   );

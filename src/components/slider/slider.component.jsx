@@ -6,11 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useContext } from "react";
+import { GalleryContext } from "../context/gallery.context";
 import { Pagination, Navigation } from "swiper";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-const Slider = () => {
+const Slider = ({ gallery }) => {
+
   return (
     <div id="gallery">
       <AnimationOnScroll animateIn="animate__tada">
@@ -25,15 +28,15 @@ const Slider = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src={missionImg} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={vissionImg} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={programsImg} alt="" />
-        </SwiperSlide>
+        {gallery.map((item) => {
+          console.log(item.img);
+          return (
+            <SwiperSlide>
+              <img src={item.img} alt="" />
+            </SwiperSlide>
+          );
+        })}
+       
       </Swiper>
     </div>
   );

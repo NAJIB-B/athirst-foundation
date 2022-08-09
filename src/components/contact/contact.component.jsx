@@ -6,21 +6,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Icon } from "@iconify/react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import axios from "axios";
+import { useState } from "react";
 
 import {
   faLocationDot,
   faPhone,
   faEnvelope,
-  faBarsStaggered
+  faBarsStaggered,
 } from "@fortawesome/free-solid-svg-icons";
 
-// const location = {
-//   address: "No. 12 Oyebola St., Ojota, Lagos, Nigeria, Africa.",
-//   lat: 6.58700061126983,
-//   lng: 3.379746854549108,
-// };
-// const zoomLevel = 10;
 const Contact = () => {
+  const defaultFormFields = {
+    email: "",
+    name: "",
+    message: "",
+  };
+  const [formFields, setFormFeilds] = useState(defaultFormFields);
+  const { email, name, message } = formFields;
+  const clearFields = () => setFormFeilds(defaultFormFields);
+  // send message to athrist foundation function
+  const postMail = async (name, email, message) => {
+    const data = { name, email, message };
+    axios
+      .post("https://athirst-backend.herokuapp.com/post-mail", data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+  };
+  const formSubmit = (event) => {
+    const onSubmitHandler = () => postMail(name, email, message);
+    onSubmitHandler();
+    clearFields();
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormFeilds({ ...formFields, [name]: value });
+  };
   return (
     <div className="contactDiv" id="contact">
       <Container>
@@ -70,22 +95,45 @@ const Contact = () => {
                 form below and someone will get back to you.{" "}
               </p>
               <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                <Form.Group className="mb-3" controlId="formBasicName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Name"
+                    required
+                    onChange={handleChange}
+                    name="name"
+                    value={name}
+                  />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter mail"
+                    required
+                    onChange={handleChange}
+                    name="email"
+                    value={email}
+                  />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                  <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <button type="submit" className="contactSubmitBtn">
-                  Submit
-                </button>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    required
+                    onChange={handleChange}
+                    name="message"
+                    value={message}
+                  ></textarea>
+                </div>
               </Form>
+              <button className="contactSubmitBtn" onClick={formSubmit}>
+                Submit
+              </button>
             </div>
           </Col>
         </Row>
