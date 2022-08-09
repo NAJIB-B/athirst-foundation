@@ -28,7 +28,7 @@ const Slider = ({ gallery }) => {
           console.log(item.img);
           return (
             <SwiperSlide>
-              <img src={item.img} alt="" />
+              <img src={item.img} alt="" className="sliderImg"/>
             </SwiperSlide>
           );
         })}
